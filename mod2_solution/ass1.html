@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif; /* Optional: Set your preferred font-family */
+        }
+
+        h1 {
+            text-align: center; /* Center align the heading */
+        }
+
+        .container {
+            width: 100%;
+            margin: 20px auto; /* Center align the container */
+            box-sizing: border-box;
+        }
+
+        .section {
+            box-sizing: border-box;
+            position: relative;
+            float: right;
+            width: 100%;
+            margin-bottom: 20px; /* Adjust vertical spacing between sections */
+        }
+
+        .title {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #ccc; /* Unique color for section title region */
+            color: #333; /* Adjust text color for readability */
+            padding: 5px;
+            border: 1px solid #000; /* 1px black border for section title region */
+        }
+
+        @media (min-width: 768px) {
+            .section {
+                width: 48%; /* Adjust width for tablet view */
+                margin-right: 2%; /* Adjust space between sections */
+            }
+
+            .sushi {
+                clear: both; /* Ensure sushi section is on a new row */
+            }
+        }
+
+        @media (max-width: 991px) {
+            .sushi {
+                width: 100%; /* Make sushi section fill the entire line */
+                clear: both; /* Ensure sushi section is on a new row */
+            }
+        }
+
+        @media (min-width: 992px) {
+            .section {
+                width: 30.33%; /* Each section takes up one-third of the available space */
+                margin-right: 3%; /* Adjust space between sections */
+                float: left; /* Ensure sections appear side by side */
+                clear: none; /* Remove clearing */
+            }
+
+            .sushi {
+                margin-right: 0; /* Remove margin-right for the last section */
+            }
+        }
+
+        /* Optional: Adjust font size for heading and section title */
+        h1 {
+            font-size: 150%; /* 75% larger than dummy text font size */
+        }
+
+        .title-Chicken {
+            position: absolute; /* Position Chicken title absolutely */
+            top: 10px; /* Position at the top */
+            right: 0; /* Position at the right */
+            font-size: 125%; /* 25% larger than dummy text font size */
+            background-color: #ff9999; /* Background color for Chicken section */
+            padding: 10px; /* Add padding */
+            border-radius: 5px; /* Round the corners */
+        }
+
+        .title-Beef {
+            position: absolute; /* Position Chicken title absolutely */
+            top: 10px; /* Position at the top */
+            right: 0; /* Position at the right */
+            text-align: right;
+            font-size: 125%; /* 25% larger than dummy text font size */ 
+            background-color: #99ccff; /* Background color for Beef section */
+            padding: 10px; /* Add padding */
+            border-radius: 5px; /* Round the corners */
+        }
+
+        .title-Sushi {
+            position: absolute; /* Position Chicken title absolutely */
+            top: 10px; /* Position at the top */
+            right: 0; /* Position at the right */
+            text-align: right;
+            font-size: 125%; /* 25% larger than dummy text font size */
+            background-color: #99ff99; /* Background color for Sushi section */
+            padding: 10px; /* Add padding */
+            border-radius: 5px; /* Round the corners */
+        }
+
+        .description {
+            margin-top: 40px; /* Adjust margin-top as needed */
+            text-align: right;
+        }
+
+        .section.chicken {
+            background-color: #ccc; /* Gray background color */
+            padding: 20px; /* Add padding */
+            border-radius: 5px; /* Round the corners */
+            margin-top: 20px; /* Add margin-top for spacing */
+        }
+
+        .section.beef {
+            background-color: #ccc; /* Gray background color */
+            padding: 20px; /* Add padding */
+            border-radius: 5px; /* Round the corners */
+            margin-top: 20px; /* Add margin-top for spacing */
+        }
+
+        .section.sushi {
+            background-color: #ccc; /* Gray background color */
+            padding: 20px; /* Add padding */
+            border-radius: 5px; /* Round the corners */
+            margin-top: 20px; /* Add margin-top for spacing */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>OUR MENU</h1>
+
+    <div class="container">
+        <div class="section chicken">
+            <div class="title-Chicken">Chicken</div>
+            <p class="description" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="section beef">
+            <div class="title-Beef">Beef</div>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="section sushi">
+            <div class="title-Sushi">Sushi</div>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+
+</body>
+</html>
